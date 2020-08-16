@@ -1,0 +1,63 @@
+
+--创建数据库
+create database student_examination_sys  charset=utf8;
+
+--建表student，并插入数据
+
+create table student(
+
+ 		id int ,
+
+		name varchar(20) ,
+
+		age tinyint ,
+
+ 		sex varchar(20)
+);
+
+insert into student  values
+		(001,'张三',18,'男'),
+
+ 		(002,'李四',20,'女');	
+
+--建表subject，并插入数据
+
+create table subject(
+
+ 		id int ,
+
+		subject varchar(20) ,
+
+		teacher varchar(20) ,
+
+ 		description varchar(100)
+);
+
+insert into subject  values
+		(1001,'语文','王老师','本次考试比较简单'),
+
+ 		(1002,'数学','刘老师','本次考试比较难');	
+
+--建表score，并插入数据
+
+create table score(
+
+ 		id int ,
+
+		student_id int ,
+
+		subject_id int ,
+
+ 		score float
+);
+
+insert into subject  values
+		(1,001,1001,80),
+
+ 		(2,002,1002,60),
+
+		(3,001,1001,70)
+		
+		(4,002,1002,50.5);	
+  
+
